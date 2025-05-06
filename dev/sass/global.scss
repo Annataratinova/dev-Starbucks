@@ -3,6 +3,10 @@ font-family: $font-primary ;
 font-size: $font-size;
 }
 
+.logo {
+    max-width: 195px;
+}
+
 body {
     background-color: $bg-body;
     color: $color-text;
@@ -23,4 +27,8 @@ section {
 ::selection {
     color: $primary-color;
     background-color: $bg-footer;
+}
+
+.show {
+    display: block !important;
 }

@@ -1,18 +1,50 @@
 @media screen and (max-width: 1024px) {
+
     header {
-
-        &-nav {
-        gap: var(--gap);    
-        display: none;
+        padding: 34px 0;
+        .container {
+            gap: 0;
         }
-
+    
         nav.header-nav {
-            display: none;
-            gap: var(--gap);
+            gap: 25px;
+            flex-direction: column;
+            padding: 25px;
+            background-color: $bg-footer;
         }
 
-        
-        } 
+        nav.header-nav__item {
+            font-size: 16px;
+        }
+    
+            
+         } 
+    
+        container {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+    
+        .mobile-container {
+            display: none ;
+            position: absolute;
+            left: 0;
+            top: 88px;
+            width: 100%;
+        }
+    
+        .logo {
+            max-width: 114px;
+        }
+    
+    
+    
+    
+    
+    
+        .footer {
+            .logo {
+                max-width: 134px;
+            }
+        }
 }
-
-
