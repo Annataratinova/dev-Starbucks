@@ -1,8 +1,19 @@
-header{
-	height: 7vh;
-	padding: 15px 0;
-	background: #222;
-	a {
-		color: #fff;
-	}
+header {
+
+.container {
+--gap: 94px; 
+gap: var(--gap);
+display: flex;
 }
+
+nav.header-nav {
+    display: flex;
+    gap: var(--gap);
+}
+
+&-nav {
+gap: var(--gap);    
+display: flex;
+}
+
+} 

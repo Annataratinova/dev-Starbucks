@@ -1,4 +1,18 @@
 @media screen and (max-width: 1024px) {
+    header {
+
+        &-nav {
+        gap: var(--gap);    
+        display: none;
+        }
+
+        nav.header-nav {
+            display: none;
+            gap: var(--gap);
+        }
+
+        
+        } 
 }
 
 
