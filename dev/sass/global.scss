@@ -29,8 +29,8 @@ a {
     --size: 84px;
     --border-radius: 29px;
     --border-width: 3px;
-    width: calc (var(--size) - var(--border-width) * 2);
-    height: calc (var(--size) - var(--border-width) * 2);
+    width: calc(var(--size) - var(--border-width) * 2);
+    height: calc(var(--size) - var(--border-width) * 2);
    
     border-radius: var(--border-radius);
     background-color: $bg-footer;

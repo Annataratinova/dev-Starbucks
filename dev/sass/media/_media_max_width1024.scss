@@ -8,11 +8,9 @@
 
 
     
-        nav.header-nav {
-            gap: 25px;
-            flex-direction: column;
-            padding: 25px;
-            background-color: $bg-footer;
+       .container > nav.header-nav {
+           
+            display: none;
         }
 
         nav.header-nav__item {
@@ -33,6 +31,14 @@
             left: 0;
             top: 88px;
             width: 100%;
+
+            .header-nav {
+            gap: 25px;
+            flex-direction: column;
+            padding: 25px;
+            background-color: $bg-footer;
+            z-index: 9;
+            }
         }
     
         .logo {
