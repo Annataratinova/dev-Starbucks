@@ -13,6 +13,7 @@
             display: none;
         }
 
+
         nav.header-nav__item {
             font-size: 16px;
         }
@@ -45,14 +46,53 @@
             max-width: 114px;
         }
     
-    
-    
-    
-    
-    
         .footer {
             .logo {
                 max-width: 134px;
             }
+
+            &-row {
+             &:first-child {
+             --gap: 36px;
+             flex-wrap: wrap;
+             gap: var(--gap);
+             align-items: center;
+             margin-bottom: var(--gap);
+             
+
+              .btn.btn-arrow {
+              margin-left: auto;
+              --size: 53px;
+              --icon-size: 27px;
+              --border-radius: 18px;
+              --border-width: 3px;
+              padding: 10px;
+             }
+           }
+
+          }
+
+           &-nav {
+            order: 1;
+            width: 100%;
+            grid-template-columns: 1fr 1fr 1fr;
+            display: grid;
+
+            &__item , 
+            &__column-title {
+                font-size: 15px;
+            }
+
+            }
+
+           &-telephone {
+            font-size: 16px;
+           }
+
+           &-instagram {
+            max-width: 32px;
+           }
         }
+
+        
 }
