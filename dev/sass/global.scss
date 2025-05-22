@@ -80,6 +80,7 @@ h6, .h6 {
     }
     &.template-title_row-reverse {
         flex-direction: row-reverse;
+        margin-left: auto;
     }
 }
 
@@ -233,7 +234,6 @@ background-image: $background-gradient;
    position: relative;
    border-radius: 50%;
    box-shadow: -4.56px 15.52px 26.48px #143e2875;
-   z-index: 1;
    &.label_text-large {
    font-size: 62px;
    }
@@ -242,11 +242,12 @@ background-image: $background-gradient;
    font-size: 32px;
    }
    &:before {
-    content: "";
+    content: var(--content);
     @include transform-centered;
+    @include flex-centered;
     width: var(--size);
     height: var(--size);
     background: url(assets/img/label.png) center/contain no-repeat;
-    z-index: -1;
+    transform: translate(-50%, -50%) rotate(-15deg);
    }
 }

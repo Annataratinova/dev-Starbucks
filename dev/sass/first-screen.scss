@@ -1,4 +1,11 @@
 .banner {
+  padding-top: 126px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 36px;
+  }
     .template-title {
     h1 {
       display: flex;
@@ -30,10 +37,11 @@
 
     &-image {
       position: relative;
+      max-width: 472px;
       .label {
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 14px;
+        right: 24px;
       }
     }
 }
