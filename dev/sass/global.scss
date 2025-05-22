@@ -184,6 +184,13 @@ a {
     width: inherit;
 }
 
+.banner .container {
+    display: flex;
+    justify-content: space-between ;
+    gap: 24px;
+}
+
+
 .container {
     max-width: 1278px;
     padding-left: 12px;
@@ -209,4 +216,37 @@ a {
 background-clip: text;
 color: transparent;
 background-image: $background-gradient;
+}
+
+.label {
+   --size: 184px;
+   --this-size: calc(var(--size) - 33px);
+   width: var(--this-size);
+   height: var(--this-size);
+   font-size: 38px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-weight: 500;
+   text-transform: uppercase;
+   text-align: center;
+   position: relative;
+   border-radius: 50%;
+   box-shadow: -4.56px 15.52px 26.48px #143e2875;
+   z-index: 1;
+   &.label_text-large {
+   font-size: 62px;
+   }
+   &.label_sm {
+   --size: 133px;
+   font-size: 32px;
+   }
+   &:before {
+    content: "";
+    @include transform-centered;
+    width: var(--size);
+    height: var(--size);
+    background: url(assets/img/label.png) center/contain no-repeat;
+    z-index: -1;
+   }
 }
